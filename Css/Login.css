@@ -1,0 +1,343 @@
+﻿.container {
+    max-width: 100%;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    /*background-color: #bae8e8;*/
+    /*background-image: linear-gradient(95deg, #bae8e8 0%,#bae8e8 30%, #ffffff 55%, #ffffff 100%);*/
+    background-image: linear-gradient(to left top, #21aba5, #56b9b4, #7ac7c3, #9bd5d2, #bae3e1, #caeaeb, #daf1f4, #eaf8fb, #f0f9fe, #f7fbff, #fcfdff, #ffffff);
+}
+
+.row {
+    min-height: 100vh;
+}
+
+.header-title {
+    font-size: 35px;
+    font-weight: 200;
+    font-family: revert;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    align-items: center;
+    /*background-color: #BAE8E8;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*position: relative;*/
+}
+
+.logo-text {
+    display: block;
+    margin: auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    /*position: relative;*/
+}
+
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
+
+.form-input {
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+}
+
+.logoheader {
+    color: #10375C;
+    font-size: 30px;
+    /*margin: 10px 0 0 0;*/
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.label-container {
+    font-size: 15px;
+    margin: 0 0 5px 0;
+    color: black;
+}
+
+.label-container-password {
+    font-size: 15px;
+    margin: 0 0 5px 0;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container {
+    border: 1px solid grey;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+.form-submit {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.forgot-password {
+    text-align: center;
+}
+
+    .forgot-password a {
+        color: #10375C;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+        .forgot-password a:hover {
+            text-decoration: none;
+        }
+
+#btnSubmit {
+    background-color: #10375C;
+    width: 100%;
+    border: none;
+}
+
+.container-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 13px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    /*display: flex;*/
+}
+
+/* Google chrome */
+@-webkit-keyframes svg-text-anim {
+    25% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    40% {
+        stroke-dashoffset: 0;
+        fill: #10375c;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #10375c;
+    }
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+    25% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    40% {
+        stroke-dashoffset: 0;
+        fill: #10375c;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #10375c;
+    }
+}
+
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+    width: 480px;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+/* (B) MOVING TICKER WRAPPER */
+.hmove {
+    display: flex;
+    justify-content:center;
+    width:max-content;
+}
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+    0% {
+        transform: translate3d(200%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.hmove {
+    animation: tickerh linear 12s infinite;
+}
+
+    .hmove:hover {
+        animation-play-state: paused;
+    }
+
+
+#menu {
+    background-color: transparent;
+    color: #10375C;
+}
+
+    #menu:hover {
+        color: black;
+        border: 1px solid lightblue;
+    }
+
+#sidebar {
+    margin-top: 40px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+#sidebar-nav {
+    width: 300px;
+    min-width: 30px;
+    max-width: 300px;
+    color: black;
+    border-radius: 0;
+    border: 0 1px 0 0;
+    display: flex;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 15px 6px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #10375C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 50px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+    /* On mouse-over */
+    .sidenav a:hover, .dropdown-btn:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+.dropdown-link {
+    padding: 6px 15px 6px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #10375C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 50px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    background-color: rgba(255,255,255,0.2);
+}
+
+    .dropdown-link:hover {
+        color: #10375C;
+    }
+
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: rgba(255,255,255,0.2);
+    color: #10375C;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: rgba(255,255,255,0.2);
+    padding-left: 8px;
+}
+
+    .dropdown-container a {
+        display: block;
+        margin: 10px 0 10px 5px;
+        padding: 6px 8px 6px 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+        .dropdown-container a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding: 0 10px 0 10px;
+}
+
+
+.dropdown-listitem {
+    color: black;
+    text-decoration: none;
+}

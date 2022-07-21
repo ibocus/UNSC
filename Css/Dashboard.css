@@ -1,0 +1,686 @@
+﻿html {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+main {
+    min-width: 1000px;
+    background-color: rgba(255,255,255,0.95);
+}
+
+.container {
+    margin-top: 10px;
+    margin-left: 5px;
+    min-width: 100%;
+}
+
+.container-fluid {
+    background-image: url("../Images/itllogocenter.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.row {
+}
+
+.col-color {
+    background-color: #E3F6F5;
+    min-height: 100vh;
+}
+
+h4 a dashboard-logo {
+    color: gray;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-row {
+    font-size: 17px;
+    font-weight: 600;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.new-item {
+    background-color: #E3F6F5;
+    color: black;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #BAE8E8;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+    .new-item:hover {
+        color: black;
+        background-color: #BAE8E8;
+    }
+
+.counter-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.legendrow {
+    margin-top: 15px;
+}
+
+.counter-box {
+    display: block;
+    background: #f0f0f0;
+    padding: 10px 10px 10px;
+    text-align: center;
+    /*border: 1px solid gray;*/
+    border-radius: 5px;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+    .counter-box p {
+        margin: 5px 0 0;
+        padding: 0;
+        color: #6a6a6a;
+        font-size: 14px;
+        font-weight: 500
+    }
+
+    .counter-box a {
+        margin: 5px 0 0;
+        padding: 0;
+        color: #6a6a6a;
+        font-size: 14px;
+        font-weight: 500
+    }
+
+        .counter-box a:hover {
+            color: #6a6a6a;
+            font-weight: bold;
+        }
+
+    .counter-box i {
+        font-size: 20px;
+        margin: 0 0 15px;
+        color: #d2d2d2
+    }
+
+.counter {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    color: #6a6a6a;
+    line-height: 30px;
+}
+
+    .counter a {
+        margin: 5px 0 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 500;
+        color: #6a6a6a;
+    }
+
+        .counter a:hover {
+            color: #6a6a6a;
+        }
+
+.counter-box.colored {
+    background: #3acf87
+}
+
+    .counter-box.colored p,
+    .counter-box.colored i,
+    .counter-box.colored .counter {
+        color: #fff
+    }
+
+
+.MyCalendar {
+    height: 350px;
+    margin-top: 10px;
+    min-width: 100%;
+    text-align: center;
+    border: 1px #E3F6F5;
+}
+
+    .MyCalendar td {
+        padding: 5px;
+        text-align: center;
+    }
+
+        .MyCalendar td a {
+            text-decoration: none;
+        }
+
+        .MyCalendar td:hover {
+            padding: 5px;
+            background-color: #E3F6F5;
+        }
+
+    .MyCalendar thead td {
+        padding: 5px;
+        border: none;
+        height: 5px;
+    }
+
+    .MyCalendar th {
+        padding: 5px;
+        height: 5px;
+    }
+
+ul.dropdown-menu {
+    position: absolute;
+    top: 113%;
+    left: 0px;
+    display: none;
+    min-width: 90%;
+    border-radius: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+    ul.dropdown-menu.dropdown-menu-2 {
+        top: 113%;
+        padding-left: 5px;
+        padding-right: 5px;
+        right: 0;
+        left: 0;
+        width: max-content;
+    }
+
+ul.dropdown-menu-name {
+    position: absolute;
+    top: 113%;
+    /*left: 10px;*/
+    display: none;
+    min-width: 90%;
+    border-radius: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+
+ul.dropdown-menu-collapsed {
+    position: absolute;
+    top: 115%;
+    display: none;
+    border-radius: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    right: 0;
+    left: auto;
+    background: #E3F6F5;
+    width: max-content;
+    text-align: center;
+}
+
+
+a .dropdown-item:hover {
+    /*color: #16181b;*/
+    text-decoration: none;
+}
+
+a .dropdown-item:active {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul.navbar-nav {
+    text-align: center;
+}
+
+a.nav-link.navbarDropdownMenu {
+    text-align: right;
+}
+
+/*li.nav-item {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 16px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}*/
+
+#menu {
+    color: black;
+    background: #f9f9f9;
+    border: none;
+}
+
+    #menu:hover {
+        background-color: lightgray;
+    }
+
+#sidebar-nav {
+    width: 300px;
+    min-width: 30px;
+    max-width: 300px;
+    color: black;
+    border-radius: 0;
+    border: 0 1px 0 0;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 10px 6px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #10375C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 50px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+}
+
+    /* On mouse-over */
+    .sidenav a:hover, .dropdown-btn:hover {
+        background-color: #E3F6F5;
+    }
+
+.dropdown-link {
+    padding: 6px 10px 6px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #10375C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 50px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+}
+
+    .dropdown-link:hover {
+        background-color: #E3F6F5;
+        color: #10375C;
+    }
+
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: #E3F6F5;
+    color: #10375C;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #fff;
+    padding-left: 8px;
+}
+
+    .dropdown-container a {
+        display: block;
+        margin: 10px 0 10px 5px;
+        padding: 6px 8px 6px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: dimgray;
+    }
+
+        .dropdown-container a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding: 0 10px 0 10px;
+}
+
+
+.dropdown-listitem {
+    color: black;
+    text-decoration: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: darkgray;
+    font-size: 13px;
+    height: 20px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0 15px 0px;
+    color: #10375C;
+}
+
+.form-input {
+    margin: 10px 20px 10px 0;
+    display: flex;
+}
+
+.form-subtitle {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0 15px 0px;
+}
+
+.control-label {
+    font-size: 14px;
+    padding-top: 5px;
+    margin-right: 50px;
+}
+
+.input-group {
+    display: flex;
+}
+
+.dropdownlist {
+    height: 35px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+}
+
+.textbox {
+    height: 35px;
+    min-width: 100px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+}
+
+.multitext {
+    width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px 10px 0 10px;
+}
+
+.btn-container {
+    margin: 15px 0 15px 0;
+    display: flex;
+    justify-content: end;
+}
+
+.btncustom {
+    width: fit-content;
+    min-width: 80px;
+    background-color: #E3F6F5;
+    border: 1px solid #BAE8E8;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+    .btncustom:hover {
+        text-decoration: none;
+        color: black;
+        background-color: #BAE8E8;
+    }
+
+.btn-search {
+    width: fit-content;
+    min-width: 80px;
+    background-color: #E3F6F5;
+    border: 1px solid #BAE8E8;
+    border-radius: 5px;
+    height: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+    .btn-search:hover {
+        text-decoration: none;
+        color: black;
+        background-color: #BAE8E8;
+    }
+
+.table-custom {
+    width: 100%;
+    table-layout: auto;
+    background: white;
+}
+
+    .table-custom tr {
+        text-align: center;
+        font-size: 13.5px;
+    }
+
+    .table-custom td {
+        border: 1px solid lightblue;
+        padding: 5px;
+    }
+
+    .table-custom th {
+        padding: 5px;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: 1px solid lightblue;
+        background-color: #E3F6F5;
+    }
+
+
+/*Calendar Control CSS*/
+.ajax__calendar_container {
+    margin-top: 5px;
+    border-radius: 4px;
+    /*min-width: 220px !important;*/
+}
+
+/*.ajax__calendar_footer {
+    margin: 8px 0 8px 0;
+    font-size: 13px;
+}
+
+.ajax__calendar_header {
+    margin: 7px 0 7px 0;
+    font-size: 13px;
+}*/
+
+/*.ajaxcal .ajax__calendar_title {
+    border:1px solid lightgray;
+}*/
+
+
+/*
+.ajaxcal .ajax__calendar_next,
+.ajaxcal .ajax__calendar_prev {
+}*/
+
+/*.ajax__calendar_body {
+}*/
+/*
+.ajax__calendar_dayname {
+    font-weight: bold;
+    margin: 0 3px 0 3px;
+    padding: 4px;
+}
+
+.ajax__calendar_day {
+    margin: 1px 3px 2px 3px;
+    font-size: 11px;
+    padding: 4px;
+}*/
+
+/*.ajax__calendar_months {
+    margin: 5px 5px 5px 5px;
+    background-color: transparent;
+    height: 160px !important;
+    min-width: 190px !important;
+}*/
+/*
+.ajax__calendar_month {
+    font-size: 12px;
+}
+
+*/
+
+.Popup-background {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.iframe {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.maincalendar {
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    border: 1px solid lightgray;
+}
+
+.maincalendar-title {
+    background-color: #E3F6F5;
+    text-align: center;
+    height: 40px;
+    color: black;
+}
+
+.maincalendar-dayheader {
+    height: 40px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.maincalendar-selected {
+    border: 1px solid lightgray;
+    background-color: #E3F6F5 !important;
+}
+
+    .maincalendar-selected a {
+        color: black !important;
+        font-weight: 700;
+    }
+
+.maincalendar-otherdays {
+    height: 60px;
+    background-color: #f2f2f2;
+    border: 1px solid lightgray;
+}
+
+    .maincalendar-otherdays a {
+        color: gray !important;
+    }
+
+        .maincalendar-otherdays a:hover {
+            font-weight: 700 !important;
+        }
+
+.maincalendar-weekend {
+    background-color: #f2f2f2;
+    border: 1px solid lightgray;
+}
+
+    .maincalendar-weekend a:hover {
+        font-weight: 700 !important;
+    }
+
+.maincalendar-today {
+    /*background-color: #E3F6F5;*/
+}
+
+    .maincalendar-today a {
+        /*background-color: #E3F6F5;*/
+        padding: 8px 14px 10px 14px !important;
+        border: 2px solid lightblue;
+        border-radius: 50%;
+        /*font-weight: 700;*/
+    }
+
+
+.maincalendar-day {
+    height: 60px;
+    border: 1px solid lightgray;
+}
+
+    .maincalendar-day a {
+    }
+
+        .maincalendar-day a:hover {
+            font-weight: 700 !important;
+        }
+
+.maincalendar-prevnext {
+    text-align: center;
+}
+
+    .maincalendar-prevnext a {
+        text-decoration: underline;
+    }
+
+        .maincalendar-prevnext a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+
+.floatingbtn {
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: max-content;
+    right: 0;
+    font-size: 14px;
+    margin-right: 15px;
+    background: #E3F6F5;
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    border: 1px solid #E3F6F5;
+}
+
+    .floatingbtn:hover {
+        color: black;
+        border: 2px solid #E3F6F5;
+    }
